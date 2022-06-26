@@ -1,4 +1,12 @@
 .backdrop {
+  @media screen and(max-width:767px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   position: fixed;
   top: 0;
   left: 0;
@@ -22,17 +30,23 @@
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: perspective(400px) translate(-50%, -50%) rotateX(0deg);
-
-  width: 450px;
+  position: relative;
+  width: 100%;
   height: 609px;
 
   background-color: getColor('white');
   transition: transform 200ms var(--main-animation);
 
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
+
+  @media screen and(min-width:768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: perspective(400px) translate(-50%, -50%) rotateX(0deg);
+  }
   @media screen and(min-width:1200px) {
     width: 528px;
     height: 581px;
@@ -72,11 +86,12 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
 
   color: getColor('primary');
 }
 .request__input {
-  width: 370px;
+  width: 100%;
   height: 40px;
   padding-left: 42px;
 
@@ -133,7 +148,7 @@
 
 .comment-area {
   position: relative;
-  width: 370px;
+  max-width: 100%;
   height: 120px;
   resize: none;
 
