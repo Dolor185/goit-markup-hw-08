@@ -1,0 +1,43 @@
+.example {
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.examples {
+  justify-content: center;
+  display: flex;
+  @extend %list;
+}
+
+.examples__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.examples__item {
+  position: relative;
+}
+
+.examples__thumb {
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+
+  width: 370px;
+  height: 70px;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.examples__text {
+  color: getColor('white');
+}
+
+.examples__link {
+  text-decoration: none;
+}

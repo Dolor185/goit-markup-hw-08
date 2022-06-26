@@ -1,0 +1,83 @@
+.hero {
+  display: block;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  text-align: center;
+}
+
+.hero__title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: getColor('white');
+
+  @media screen and (min-width: 1200px) {
+    width: 700px;
+  }
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('/images/studio/Header-480px.jpg');
+  @media screen and(min-device-pixel-ratio:2),
+    screen and(min-resolution:2dppx),
+    screen and(min-resolution:192dpi) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/studio/Header-480px@2x.jpg');
+  }
+
+  @media screen and(min-width:481px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/studio/Header-768px.jpg');
+    @media screen and(min-device-pixel-ratio:2),
+      screen and(min-resolution:2dppx),
+      screen and(min-resolution:192dpi) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('/images/studio/Header-768px@2x.jpg');
+    }
+  }
+
+  @media screen and(min-width:769px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/studio/Header-1600px.jpg');
+    @media screen and(min-device-pixel-ratio:2),
+      screen and(min-resolution:2dppx),
+      screen and(min-resolution:192dpi) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('/images/studio/Header-1600px@2x.jpg');
+    }
+  }
+  background-size: cover;
+  background-position: center;
+}
+
+// button
+
+.hero__button {
+  height: 50px;
+  min-width: 200px;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  background: getColor('accent');
+  color: getColor('white');
+  text-align: center;
+  border-color: transparent;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  transition: background-color 250ms var(--main-animation);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

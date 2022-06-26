@@ -1,0 +1,141 @@
+.projects {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: -8px;
+  padding: 0;
+  margin-bottom: 50px;
+
+  @extend %list;
+
+  @media screen and(min-width:768px) {
+    justify-content: center;
+  }
+}
+
+// .projects__item:not(:last-child) {
+//   margin-right: 8px;
+// }
+
+.projects__item {
+  margin: 8px;
+}
+
+.projects__btn {
+  border-radius: 6px;
+  padding: 6px 22px;
+  border-color: transparent;
+
+  cursor: pointer;
+
+  text-align: center;
+  color: getColor('primary');
+
+  transition: color 250ms var(--main-animation), background-color 250ms var(--main-animation),
+    box-shadow 250ms var(--main-animation);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 2px 3px rgba(47, 48, 58, 0.4);
+    color: getColor('white');
+    background-color: getColor('accent');
+  }
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -15px;
+  @extend %list;
+}
+
+.works__name {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px 24px;
+}
+
+.works__link {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.works__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: getColor('primery');
+}
+
+.works__text {
+  margin-top: 4px;
+  margin-bottom: 0;
+
+  color: getColor('secondary');
+}
+
+.works__item {
+  margin: 15px;
+  border: 1px solid #ececec;
+  &:hover,
+  &:focus {
+    box-shadow: 1px 3px 5px rgba(47, 48, 58, 0.4);
+  }
+
+  width: calc((100% - 2 * 15px) / 1);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+  }
+
+  @media screen and(min-width:1200px) {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+}
+
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.thumb__image {
+  display: block;
+  max-width: 100%;
+}
+
+.thumb__description {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+
+  transform: translateY(100%);
+  transition: transform 250ms var(--main-animation);
+
+  .works__item:hover & {
+    transform: translateY(0);
+  }
+}
+
+.thumb__text {
+  padding: 63px 24px;
+
+  color: getColor('white');
+}

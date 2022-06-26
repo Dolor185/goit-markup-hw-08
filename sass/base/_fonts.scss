@@ -1,0 +1,218 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+main {
+  letter-spacing: 0.03em;
+}
+.header__logo {
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  @media screen and(min-width:1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.site-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  @media screen and(min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.contacts__link--tel {
+  font-size: 34px;
+  line-height: 1.18;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.contacts__link--mail {
+  font-size: 24px;
+  line-height: 1.16;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.contacts__link {
+  @media screen and(min-width:768px) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.mobile-menu__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.hero__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.hero__title {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.feutures__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.feutures__text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.examples__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.staff__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.info__adress {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.info__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.socials__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.subscribe__label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.subscribe__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.subscribe__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+.projects__btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.works__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.works__text {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.thumb__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.request__text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+}
+.request__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.comment-area::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+.agreement__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.send__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
