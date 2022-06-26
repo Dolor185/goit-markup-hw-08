@@ -782,6 +782,10 @@ main {
   text-decoration: none;
 }
 
+.examples__image {
+  display: block;
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
