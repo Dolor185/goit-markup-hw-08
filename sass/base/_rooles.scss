@@ -12,6 +12,10 @@ body {
   color: getColor('secondary');
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 :root {
   --main-animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -58,10 +62,14 @@ body {
 
 .section__title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: getColor('primery');
 
   text-align: center;
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .visually-hidden {

@@ -12,23 +12,24 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: -8px;
+  margin: -4px;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   @extend %list;
 
   @media screen and(min-width:768px) {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
   }
 }
 
-// .projects__item:not(:last-child) {
-//   margin-right: 8px;
-// }
-
 .projects__item {
-  margin: 8px;
+  margin: 4px;
 }
 
 .projects__btn {

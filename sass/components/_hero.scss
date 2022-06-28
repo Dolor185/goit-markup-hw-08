@@ -1,8 +1,13 @@
 .hero {
   display: block;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   text-align: center;
+
+  @media screen and(min-width:1200px) {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 }
 
 .hero__title {
@@ -15,15 +20,20 @@
   color: getColor('white');
 
   @media screen and (min-width: 1200px) {
-    width: 700px;
+    max-width: 700px;
   }
 }
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and(min-width:1200px) {
+    height: 600px;
+  }
+
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/studio/Header-480px.jpg');
   @media screen and(min-device-pixel-ratio:2),
